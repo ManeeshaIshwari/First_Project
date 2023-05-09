@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, address, phone, icons" />
+
+    <title>onlinEdu</title>
+    <link href="css/booking.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('.menu').click(function () {
+                $('.overlay').toggleClass('anim');
+                $(this).addClass('open')
+            });
+
+            $('.open').click(function () {
+                $('.overlay').toggleClass('reverse-animation');
+            })
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="BG">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+
+                <li><a href="#">Register</a>
+                    <ul>
+                        <li><a href="register.html">As Student</a></li>
+                        <li><a href="tregister.html">As Teacher</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="stlogin.html">Login</a></li>
+
+                <li><a href="#">Classes</a>
+                    <ul>
+                        <li><a href="#">Grade 10</a>
+                            <ul>
+                                <li><a href="mathteacher.html">Maths</a></li>
+                                <li><a href="scienceteacher.html">Science</a></li>
+                                <li><a href="englishteacher.html">English</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Grade 11</a>
+                            <ul>
+                                <li><a href="mathteacher.html">Maths</a></li>
+                                <li><a href="scienceteacher.html">Science</a></li>
+                                <li><a href="englishteacher.html">English</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Revision</a>
+                            <ul>
+                                <li><a href="mathteacher.html">Maths</a></li>
+                                <li><a href="scienceteacher.html">Science</a></li>
+                                <li><a href="englishteacher.html">English</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li><a href="aboutus.html">About</a></li>
+
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="container" class="text-container">
+        <Center>
+            <img src="image/logoa.png" width="10%" height="10%">
+            <hr>
+        </Center>
+        <br><br><br><br><br>
+        <form action="php/booking.php" method="POST">
+            <div class="main">
+                <div class="login">
+
+                    <center>
+                        <h1 class="heading">Book Your Teacher</h1>
+                    </center>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="input" id="username">
+                                    <select name="Course" id="username" autocomplete="false">
+                                        <option value="Grade 10">Grade 10</option>
+                                        <option value="Grade 11">Grade 11</option>
+                                        <option value="Revision">Revision</option>
+                                    </select>
+                                    <label>Course</label>
+                                <div>
+                            </td>
+
+                            <td>
+                                <div class="input" style="align-items:right;">
+                                    <select name="Subject" id="username" autocomplete="false" name="subject">
+                                        <option value="Maths">Maths</option>
+                                        <option value="English">English</option>
+                                        <option value="Science">Science</option>
+                                    </select>
+                                    <label>Subject</label>
+                                    <div>
+                            </td>
+                            <!-- </div> -->
+                            <!-- </td> -->
+
+                            <td>
+                                <div class="input" style="align-items:right;">
+                                    <select name="Teacher" id="username" autocomplete="false">
+                                        <optgroup label="Maths">
+                                            <option value="PERERA">MR.PERERA</option>
+                                            <option value="DAHAMI">MRS.DAHAMI</option>
+                                        </optgroup>
+                                        <optgroup label="Science">
+                                            <option value="GUNASINGHE">MR.GUNASINGHE</option>
+                                            <option value="Ruwani">MRS.Ruwani</option>
+                                        </optgroup>
+                                        <optgroup label="English">
+                                            <option value="FARIS">MR.FARIS</option>
+                                            <option value="PIYUMI">MRS.PIYUMI</option>
+                                        </optgroup>
+                                    </select>
+                                    <label>Teacher <a href="Choosesubject.html">Search your Teacher</a>
+                                    </label>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="input" style="align-items:right;">
+                                    <table style="width:30px;border-spacing: 0px;">
+                                        <tr>
+                                            <td style="padding: 2px;">
+                                                <label>MON
+                                                    <input type="checkbox" name="MON" value="MON">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>TUE
+                                                    <input type="checkbox" name="TUE" value="TUE">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>WED
+                                                    <input type="checkbox" name="WED" value="WED">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>THU
+                                                    <input type="checkbox" name="THU" value="THU">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>FRI
+                                                    <input type="checkbox" name="FRI" value="FRI">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>SAT
+                                                    <input type="checkbox" name="SAT" value="SAT">
+                                                </label>
+                                            </td>
+                                            <td style="padding: 2px;">
+                                                <label>SUN
+                                                    <input type="checkbox" name="SUN" value="SUN">
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" style="padding: 2px;">
+                                                <label>Choose Two Days </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input" style="align-items:right;">
+                                    <select name="stime" id="username" type="Time" autocomplete="false">
+                                        <option value="6.00 p.m.">6.00 p.m.</option>
+                                        <option value="7.00 p.m.">7.00 p.m.</option>
+                                        <option value="8.00 p.m.">8.00 p.m.</option>
+                                    </select>
+                                    <label>Start Time</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input" style="align-items:right;">
+                                    <select name="etime" id="username" type="Time" autocomplete="false">
+                                        <option value="8.00 p.m.">8.00 p.m.</option>
+                                        <option value="9.00 p.m.">9.00 p.m.</option>
+                                        <option value="10.00 p.m.">10.00 p.m.</option>
+                                    </select>
+                                    <label>End Time</label>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+
+
+                    <center>
+                        <button class="login-btn" name="book">
+                            <h3>Book Now</h3>
+                        </button>
+                    </center>
+
+                </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- </div> -->
+    <br>
+
+
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><span>onlinEdu</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="aboutus.html">About</a>
+
+                <a href="contactus.html">Contact</a>
+
+                <a href="adminlogin.php">Admin Only</a>
+            </p>
+
+            <p class="footer-company-name">onlinEdu © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Baddegama</span> Galle,Sri Lanka</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 677 567 234</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">onlinedu@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
